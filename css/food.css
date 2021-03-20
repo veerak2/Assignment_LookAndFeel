@@ -1,0 +1,70 @@
+.theme {
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  position: relative;
+  display: grid;
+    grid-template-rows: repeat(8, 100%);
+}
+
+.themebg {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+	/* opacity: 0.3; */
+	background-color: white;
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+	object-fit: cover;
+}
+
+.opaque {
+	background: rgba(255, 255, 255, 0.5);
+}
+.themeName {
+	color: #091487;
+	font-size: 60px;
+	text-align: center;
+}
+
+.intro {
+	float: center;
+	text-align: left;
+}
+
+.examples {
+	float: center;
+}
+
+.picture {
+	width: 12%;
+	border: 1px solid black;
+	background-color: #4c6b69;
+	object-fit: cover;
+}
+
+.subdiv {
+	width: 10%;
+	border: 1px solid black;
+	font-weight: bold;
+	color: #01440b;
+}
+
+.description {
+	width: 78%;
+	text-align: left;
+	border: 1px solid black;
+	color: #5b0306;
+        font-weight: bold;
+}
+
+.pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 120px;
+	height: 120px;
+	border: 1px solid black;
+	object-fit: cover;
+}
+
+
