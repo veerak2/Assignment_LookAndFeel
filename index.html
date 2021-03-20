@@ -1,26 +1,87 @@
- <!--Your HTML code here-->
+<!DOCTYPE html>
 <html>
 <head>
-
-    <link rel="stylesheet" href="css/theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/slider1.css">
+    <script src="js/slider.js"></script>
 </head>
-<body>
-    <div id="background">
-        <img src="img11/fruitsveggies.png" class="stretch" alt="" />
+<body background="img11/background.jpeg">
+    <div class="bg"></div>
+    <div class="topnav">
+        <a class="active" href="index.html">About Project</a>
+        <a href="foodSelection.html">Food Selection</a>
+        <a href="addItem.html">Add Food Items</a>
+        <a href="aboutusnew.html">About Us</a>
+        <a href="register.html">Register</a>
     </div>
-    <div class="topnav" id="myTopnav">
 
-        <a href="aboutusnew.html" class="active">About</a>
-        <a href="#" style="float:left;background: rgba(0,0,0,0); color: black;"><font size="6" , style="italic"><b>Navigate to check food nutrients below</b></font></a>
-    </div>
+    <br>
+    <div class="slideshow-container">
 
-    <div class="dropdown">
-        <button class="dropbtn" style="width: 150px ;background-color:green; font-size:30px">Menu</button>
-        <div class="dropdown-content">
-            <a href="foodSelection.html">Food Selection</a>
-            <a href="addItem.html">Add Item</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <div class="proverb"> "To eat is a necessity, but to eat intelligently is an art." !</div>
+        <div class="mySlides fade">
+            <p>The foods we choose make a difference!!!<p>
+                <div class="numbertext">1 / 3</div>
+                <img src="img11/info2.jpg" style="width:100%">
+
+        </div>
+
+
+        <div class="mySlides fade">
+            <p>A healthy and nutrient dense diet can increase longevity, protect against diseases, and improve your overall quality of life.<p>
+                <div class="numbertext">2 / 3</div>
+                <img src="img11/disease.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <p>Our website provides you the right nutrition knowledge that will help you reach your health goals permanently.<p>
+                <div class="numbertext">3 / 3</div>
+                <img src="img11/facts.jpg" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </body>
 </html>
