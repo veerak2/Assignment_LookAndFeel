@@ -1,124 +1,125 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Make The Selection</title>
-<link rel="stylesheet" href="css/food.css">
-<link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/topnav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make The Selection</title>
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/topnav.css">
 
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-}
-th {
-  text-align: left;
-}
-</style>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
-<div class="topnav">
-  <a class="active" href="index.html">About Project</a>
-  <a href="foodSelection.html">Food Selection</a>
-  <a href="addItem.html">Add Food Items</a>
-  <a href="aboutusnew.html">About Us</a>
-  <a href="register.html">Register</a>
-  <a href="register.html">Register</a>
-</div>
-	<div id="background">
-		<img src="img11/bg2.jpg" class="stretch" alt="" />
-	</div>
+    <div class="topnav">
+        <a class="active" href="index.html">About Project</a>
+        <a href="foodSelection.html">Food Selection</a>
+        <a href="addItem.html">Add Food Items</a>
+        <a href="aboutusnew.html">About Us</a>
+        <a href="register.html">Register</a>
+    </div>
+    <div id="background">
+        <img src="img11/bg2.jpg" class="stretch" alt="" />
+    </div>
 
-<div class="theme">
+    <div class="theme">
 
-	<img src="img11/bg1.jpg" class="themebg">
-	<div class="opaque">
-	<div class="themeName">Nutrient Information</div>
-	
-	<div class="intro">
-		<table>
-			
-			<tr><h3>Nutrition facts labels help to maintain better eating habits and aid in attaining a balanced energy level.While there are many essential nutrients, they can be broken into two categories: macronutrients and micronutrients. Macronutrients are eaten in large amounts and include the primary building blocks of your diet — protein, carbohydrates, and fat — which provide your body with energy.</h3></tr>
-			<tr><h4>Make a selection of food item from the dropdown below and we will tell you the nutrient value of the food selected</h4></tr>
-		</table>
-	</div>
-	
-	<div class="selection">
-  		<form action="">
-  		<label for="foodSelection">Choose desired food item from the list:</label>
-  		<input type="text" list="some-list">
-		<datalist id="some-list">
- 			<option value="Wine">Wine</option>
- 			<option value="Chocolate">Chocolate</option>
- 			<option value="Chicken">Chicken</option>
-			<option value="Cheese">Cheese</option>
-		</datalist>
-  		<input type="submit">
-		</form>
-		
-    		
-	
-		<form method="get" action="/Users/18135/Desktop/Personal/DIS_C%23/2021FALL_Assignment3_LookAndFeel-master/2019FALL_Assignment3_LookAndFeel-master/addItem.html">
-    		<button type="submit" data-inline="true">Add Item</button>
-		</form>
-		
-		<button type="button" data-inline="true" onclick="alert('Are You sure you want to delete the item!')">Delete!</button>
-		
-		</button>
-		
-		
-	
-	<div class="nutrientInformation">
-		
-		
-		
+        <img src="img11/bg1.jpg" class="themebg">
+        <div class="opaque">
+            <div class="themeName">Nutrient Information</div>
 
-		<h2>Check The Information Below</h2>
-		
-		<form method="get" action="/addItem.html">
-    		<button type="submit">Update Item</button>
-		</form>
+            <div class="intro">
+                <table>
 
-		<table style="width:100%">
-  		<tr>
-    		<th>Description</th>
-    		<th>Nutrient Name</th> 
-    		<th>Amount</th>
-		<th>Unit</th>
-  		</tr>
-  		<tr>
-    		<td>Wine</td>
-    		<td>Sodium</td>
-    		<td>7</td>
-		<td>Mg</td>
-  		</tr>
-  		<tr>
-    		<td>Chocolate</td>
-    		<td>Sugar</td>
-    		<td>94</td>
-		<td>G</td>
-  		</tr>
-  		<tr>
-		<tr>
-    		<td>Cheese</td>
-    		<td>Protein</td>
-    		<td>30</td>
-		<td>G</td>
-  		</tr>
-  		<tr>
-		<tr>
-    		<td>Chicken</td>
-    		<td>Protein</td>
-    		<td>50</td>
-		<td>G</td>
-  		</tr>
-  		<tr>
-    	
-	</table>
+                    <tr><h3>Nutrition facts labels help to maintain better eating habits and aid in attaining a balanced energy level.While there are many essential nutrients, they can be broken into two categories: macronutrients and micronutrients. Macronutrients are eaten in large amounts and include the primary building blocks of your diet — protein, carbohydrates, and fat — which provide your body with energy.</h3></tr>
+                    <tr><h4>Make a selection of food item from the dropdown below and we will tell you the nutrient value of the food selected</h4></tr>
+                </table>
+            </div>
+
+            <div class="selection">
+                <form action="">
+                    <label for="foodSelection">Choose desired food item from the list:</label>
+                    <input type="text" list="some-list">
+                    <datalist id="some-list">
+                        <option value="Wine">Wine</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Cheese">Cheese</option>
+                    </datalist>
+                    <input type="submit">
+                </form>
+
+
+
+                <form action="addItem.html" class="inline">
+                    <button type="submit" data-inline="true">Add Item</button>
+                </form>
+
+                <button type="button" data-inline="true" onclick="alert('Are You sure you want to delete the item!')">Delete!</button>
+
+                
+
+
+
+                <div class="nutrientInformation">
+
+
+
+
+                    <h2>Check The Information Below</h2>
+
+                    <form method="get" action="/addItem.html">
+                        <button type="submit">Update Item</button>
+                    </form>
+
+                    <table style="width:100%">
+                        <tr>
+                            <th>Description</th>
+                            <th>Nutrient Name</th>
+                            <th>Amount</th>
+                            <th>Unit</th>
+                        </tr>
+                        <tr>
+                            <td>Wine</td>
+                            <td>Sodium</td>
+                            <td>7</td>
+                            <td>Mg</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate</td>
+                            <td>Sugar</td>
+                            <td>94</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Cheese</td>
+                            <td>Protein</td>
+                            <td>30</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Chicken</td>
+                            <td>Protein</td>
+                            <td>50</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+
+                    </table>
 
 </body>
 </html>
